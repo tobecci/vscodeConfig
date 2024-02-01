@@ -1,0 +1,125 @@
+{
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"git.enableSmartCommit": true,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"php.format.rules.alignConsecutiveAssignments": true,
+	"php.format.rules.arrayInitializersNewLineAfterLastElement": true,
+	"php.format.rules.arrayInitializersAlignKeyValuePairs": true,
+	"php.format.rules.callParametersNewLineAfterLeftParen": false,
+	
+	"thunder-client.editorFontSize": 16,
+
+	"git.ignoreMissingGitWarning": true,
+
+	"intelephense.files.exclude": [
+		"**/.git/**",
+		"**/.svn/**",
+		"**/.hg/**",
+		"**/CVS/**",
+		"**/.DS_Store/**",
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/vendor/**/{Tests,tests}/**",
+		"**/.history/**"
+	],
+	"[vue]": {
+		"editor.defaultFormatter": "Vue.volar"
+	},
+	"files.associations": {
+		"*.module": "php",
+	},
+	"[php]": {
+		"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
+	},
+	//   "editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[blade]": {
+		"editor.defaultFormatter": "shufo.vscode-blade-formatter"
+	},
+	"[makefile]": {
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/Thumbs.db": true,
+		// "**/node_modules": true,
+		"**/.idea": true,
+	},
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [
+			80
+		],
+		"editor.selectionHighlight": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": "off"
+	},
+	"dart.flutterSdkPath": "/opt/flutter/bin",
+	"[nginx]": {
+		"editor.defaultFormatter": "raynigon.nginx-formatter"
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.external.linuxExec": "alacritty",
+	"terminal.integrated.accessibleViewPreserveCursorPosition": true,
+	"terminal.integrated.confirmOnExit": "hasChildProcesses",
+	"[typescript]": {
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"http.experimental.systemCertificatesV2": true,
+	"[yaml]": {
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+
+	//editor appearance config
+	"window.zoomLevel": 1,
+	"editor.fontFamily": "SF Mono",
+	"editor.fontSize": 14,
+	"editor.lineHeight": 2.3,
+
+	//terminal conig
+	"terminal.integrated.fontSize": 13,
+	"terminal.integrated.lineHeight": 1.2,
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.commandsToSkipShell": [
+		"workbench.action.openRecent"
+	],
+
+	// other editor settions
+	"editor.wordWrap": "on",
+	"editor.formatOnSave": false,
+	"editor.insertSpaces": false,
+	"workbench.colorTheme": "GitHub Dark High Contrast",
+	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+	"editor.minimap.enabled": false,
+	"update.mode": "manual",
+	"editor.cursorSmoothCaretAnimation": "on",
+	// "editor.wordBasedSuggestionsMode": "allDocuments",
+	"editor.wordBasedSuggestions": "allDocuments",
+	"editor.suggest.showWords": true,
+	"editor.quickSuggestions": {
+		"other": "on",
+		"comments": "on",
+		"strings": "on",
+	},
+	"window.newWindowDimensions": "inherit",
+	"workbench.iconTheme": "vscode-icons",
+	"explorer.compactFolders": false,
+	"window.restoreWindows": "none",
+
+}
