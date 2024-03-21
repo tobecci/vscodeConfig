@@ -1,0 +1,94 @@
+[
+	// 	
+	// {
+	// 	"key": "escape",
+	// 	"command": "workbench.action.pinEditor",
+	// 	"when": "",
+	// },
+	// {
+	// 	"key": "shift+escape",
+	// 	"command": "workbench.action.unpinEditor",
+	// 	"when": "",
+	// },
+	//actions to close panels and any open sidebars, then focus into editor
+	// case 1: one board open
+	//only sidebar open
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "workbench.action.closeSidebar",
+	// 	"when": "sideBarVisible && !panelVisible && !auxiliaryBarVisible"
+	// },
+	// only panel open
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "workbench.action.closePanel",
+	// 	"when": "!sideBarVisible && panelVisible && !auxiliaryBarVisible"
+	// },
+	//only secondary bar open
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "workbench.action.closeAuxiliaryBar",
+	// 	"when": "!sideBarVisible && !panelVisible && auxiliaryBarVisible"
+	// },
+	// case 2: two boards open
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "workbench.action.maximizeEditorHideSidebar",
+	// 	"when": " sideBarVisible && !panelVisible && auxiliaryBarVisible"
+	// },
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "runCommands",
+	// 	"args": {
+	// 		"commands": [
+	// 			"workbench.action.closePanel",
+	// 			"workbench.action.closeSidebar",
+	// 		]
+	// 	},
+	// 	"when": "sideBarVisible && panelVisible && !auxiliaryBarVisible"
+	// },
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "runCommands",
+	// 	"args": {
+	// 		"commands": [
+	// 			"workbench.action.closeAuxiliaryBar",
+	// 			"workbench.action.closePanel"
+	// 		]
+	// 	},
+	// 	"when": "!sideBarVisible && panelVisible && auxiliaryBarVisible"
+	// },
+	// case 1: three boards  open
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "runCommands",
+	// 	"args": {
+	// 		"commands": [
+	// 			"workbench.action.closePanel",
+	// 			"workbench.action.closeSidebar",
+	// 			"workbench.action.closeAuxiliaryBar"
+	// 		]
+	// 	},
+	// 	"when": "sideBarVisible && panelVisible && auxiliaryBarVisible"
+	// },
+	//only find close
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "closeFindWidget",
+	// 	"when": "findWidgetVisible && !isComposing && !sideBarVisible && !panelVisible && !auxiliaryBarVisible"
+	// },
+	// {
+	// 	"key": "ctrl+shift+space",
+	// 	"command": "runCommands",
+	// 	"args": {
+	// 		"commands": [
+	// 			"closeFindWidget",
+	// 			"workbench.action.closeSidebar",
+	// 			"workbench.action.closePanel",
+	// 			"workbench.action.closeAuxiliaryBar",
+	// 			""
+	// 		]
+	// 	},
+	// 	"when": "findWidgetVisible && sideBarVisible ||  panelVisible || auxiliaryBarVisible"
+	// },
+]
