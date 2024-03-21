@@ -314,10 +314,10 @@
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//terminal
 	"terminal.integrated.gpuAcceleration": "canvas",
-	"terminal.integrated.shellIntegration.enabled": true,
-	"terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
-	"terminal.integrated.shellIntegration.history": 10,
-	"terminal.integrated.shellIntegration.suggestEnabled": true,
+	"terminal.integrated.shellIntegration.enabled": false,
+	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"terminal.integrated.shellIntegration.history": 2,
+	"terminal.integrated.shellIntegration.suggestEnabled": false,
 	//
 	"terminal.integrated.fontSize": 9,
 	"terminal.integrated.lineHeight": 3.0,
