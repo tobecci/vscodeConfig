@@ -16,7 +16,7 @@
 		"editor.defaultFormatter": "Vue.volar"
 	},
 	"files.associations": {
-		"*.module": "php",
+		"*.module": "php"
 	},
 	"[php]": {
 		"editor.defaultFormatter": "DEVSENSE.phptools-vscode"
@@ -37,11 +37,11 @@
 		"**/.DS_Store": true,
 		"**/Thumbs.db": true,
 		// "**/node_modules": true,
-		"**/.idea": true,
+		"**/.idea": true
 	},
 	"[dart]": {
-		"editor.formatOnSave": true,
-		"editor.formatOnType": true,
+		"editor.formatOnSave": false,
+		"editor.formatOnType": false,
 		"editor.rulers": [
 			80
 		],
@@ -52,14 +52,14 @@
 	},
 	"dart.flutterSdkPath": "/opt/flutter/bin",
 	"[nginx]": {
-		"editor.defaultFormatter": "raynigon.nginx-formatter"
+		// "editor.defaultFormatter": "raynigon.nginx-formatter"
 	},
 	"[typescript]": {
 		"editor.defaultFormatter": "vscode.typescript-language-features"
 	},
 	"http.experimental.systemCertificatesV2": true,
 	"[yaml]": {
-		"editor.defaultFormatter": ""
+		// "editor.defaultFormatter": ""
 	},
 	"[jsonc]": {
 		"editor.defaultFormatter": "vscode.json-language-features"
@@ -82,70 +82,88 @@
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//explorer
 	"explorer.decorations.badges": true,
+	"explorer.autoReveal": false,
+	"explorer.decorations.colors": false,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.tree.indent": 40,
+	"editor.parameterHints.enabled": true,
+	"files.restoreUndoStack": true,
+	"explorer.enableDragAndDrop": false,
+	"explorer.excludeGitIgnore": true,
+	"explorer.incrementalNaming": "smart",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.dragAndDrop": false,
+	"editor.dropIntoEditor.enabled": false,
+	// "explorer.sortOrder": "type",
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//editor
 	"editor.fontFamily": "SF Mono",
-	"editor.fontSize": 13,
-	"editor.lineHeight": 2.5,
-	"window.zoomLevel": 1.7,
+	"editor.fontSize": 11,
+	"window.zoomLevel": 0,
+	"editor.lineHeight": 3.0,
+	"workbench.iconTheme": "material-icon-theme",
+	// "window.zoomLevel": -0.5, -0.5 zoom, for sanity while working
+	"editor.linkedEditing": true,
 	"workbench.startupEditor": "none",
 	"editor.comments.ignoreEmptyLines": true,
 	"workbench.editor.mouseBackForwardToNavigate": false,
 	"workbench.editor.restoreViewState": true,
 	"workbench.editor.sharedViewState": true,
-	"workbench.reduceMotion": "on",
-	"editor.guides.indentation": true,
-	"window.density.editorTabHeight": "compact",
-	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"window.density.editorTabHeight": "default",
+	"workbench.editor.pinnedTabsOnSeparateRow": false,
 	"editor.renderWhitespace": "all",
 	"editor.renderFinalNewline": "on",
-	"window.closeWhenEmpty": false,
-	"editor.wrappingStrategy": "simple",
+	"window.closeWhenEmpty": true,
+	"editor.wrappingStrategy": "advanced",
 	"window.openFilesInNewWindow": "off",
 	"window.openFoldersInNewWindow": "default",
-	"editor.selectionHighlight": false,
 	// "editor.tabCompletion": "off",
-	"editor.scrollbar.verticalScrollbarSize": 30,
-	"editor.wordWrap": "on",
+	//indent indicators
+	"editor.selectionHighlight": true,
+	"editor.wordWrap": "off",
 	"editor.formatOnSave": false,
 	"editor.insertSpaces": false,
-	"editor.guides.bracketPairsHorizontal": true,
+	"editor.guides.bracketPairsHorizontal": false,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-	"editor.guides.bracketPairs": true,
-	"editor.matchBrackets": "always",
-	"gitlens.blame.highlight.locations": [
-		"gutter",
-	],
-	"editor.renderLineHighlight": "none",
+	"editor.guides.bracketPairs": false,
+	"workbench.reduceMotion": "on",
+	"editor.guides.indentation": false,
+	"editor.matchBrackets": "near",
+	"editor.renderLineHighlight": "line",
 	"editor.guides.highlightActiveBracketPair": true,
-	"editor.guides.highlightActiveIndentation": "always",
+	"editor.guides.highlightActiveIndentation": false,
 	"editor.occurrencesHighlight": "off",
+	"editor.rename.enablePreview": true,
+	"editor.defaultColorDecorators": true,
+	// "task.quickOpen.history": 10,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//cursor
 	"editor.cursorBlinking": "solid",
-	"editor.cursorWidth": 3,
-	"editor.cursorStyle": "block-outline",
-	"editor.wrappingIndent": "indent",
-	"workbench.editor.pinnedTabSizing": "normal",
+	"editor.cursorStyle": "line-thin",
+	"editor.cursorWidth": 1,
 	"editor.cursorSmoothCaretAnimation": "off",
 	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//gutter
+	"editor.wrappingIndent": "indent",
+	"workbench.editor.pinnedTabSizing": "normal",
+	"editor.lineNumbers": "on",
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//misc
-	"editor.autoClosingBrackets": "always",
 	"editor.renderControlCharacters": true,
 	"editor.autoClosingDelete": "always",
-	"editor.autoClosingOvertype": "never",
+	"editor.autoClosingBrackets": "beforeWhitespace",
+	"editor.autoClosingComments": "beforeWhitespace",
+	// "editor.autoClosingOvertype": "never",
 	"editor.comments.insertSpace": true,
-	"workbench.tree.renderIndentGuides": "always",
-	"workbench.tree.indent": 40,
 	"editor.unicodeHighlight.invisibleCharacters": true,
-	"editor.foldingImportsByDefault": true,
-	"editor.formatOnType": true,
-	"editor.showFoldingControls": "always",
+	"editor.foldingImportsByDefault": false,
+	"editor.formatOnType": false,
+	"editor.showFoldingControls": "never",
 	"window.newWindowDimensions": "maximized",
 	"explorer.compactFolders": false,
+	"editor.inlineSuggest.suppressSuggestions": false,
 	"window.restoreWindows": "none",
-	"editor.autoClosingComments": "always",
-	"editor.autoIndent": "advanced",
+	"editor.autoIndent": "full",
 	"editor.colorDecorators": true,
 	"editor.copyWithSyntaxHighlighting": false,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -154,10 +172,39 @@
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// find
 	"editor.find.loop": false,
+	"editor.find.addExtraSpaceOnTop": true,
+	"editor.find.seedSearchStringFromSelection": "always",
+	"search.defaultViewMode": "tree",
+	"workbench.list.defaultFindMode": "filter",
+	"workbench.list.defaultFindMatchType": "fuzzy",
+	"window.customMenuBarAltFocus": false,
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//outline
+	"outline.showBooleans": false,
+	"outline.showVariables": false,
+	"outline.showConstants": false,
+	"outline.showFunctions": true,
+	"outline.showArrays": false,
+	"outline.showProperties": false,
+	"outline.showOperators": false,
+	"outline.showFields": false,
+	"outline.showEnums": false,
+	"outline.showEnumMembers": false,
+	"outline.showEvents": false,
+	"outline.showNumbers": false,
+	"outline.showStrings": false,
+	"outline.showTypeParameters": false,
+	"outline.showNull": false,
+	"outline.showKeys": false,
+	"outline.problems.colors": true,
+	"outline.problems.enabled": true,
+	"outline.problems.badges": true,
+	"problems.visibility": true,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// file name colors
-	"workbench.editor.decorations.colors": false,
-	"workbench.activityBar.location": "top",
+	"workbench.editor.decorations.colors": true,
+	"editor.language.colorizedBracketPairs": null,
+	"workbench.editor.splitInGroupLayout": "horizontal",
 	"editor.detectIndentation": false,
 	"editor.tabSize": 6,
 	"workbench.editor.navigationScope": "editor",
@@ -165,13 +212,18 @@
 	//scroll limit
 	"editor.scrollBeyondLastColumn": 0,
 	"editor.scrollBeyondLastLine": false,
+	"editor.scrollbar.vertical": "visible",
+	"editor.scrollbar.verticalScrollbarSize": 35,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.horizontalScrollbarSize": 12,
+	// "editor.scrollbar"
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//preview
 	"workbench.editor.enablePreview": false,
 	"workbench.editor.enablePreviewFromQuickOpen": false,
 	"workbench.editor.enablePreviewFromCodeNavigation": false,
-	"editor.suggest.preview": true,
-	"editor.autoSurround": "languageDefined",
+	"editor.suggest.preview": false,
+	// "editor.autoSurround": "languageDefined",
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// where to open files
 	"workbench.editor.revealIfOpen": false,
@@ -180,7 +232,11 @@
 	"workbench.editor.preventPinnedEditorClose": "keyboardAndMouse",
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//groups
-	"workbench.editor.closeEmptyGroups": false,
+	"workbench.editor.closeEmptyGroups": true,
+	"editor.unicodeHighlight.ambiguousCharacters": true,
+	"workbench.editor.untitled.labelFormat": "name",
+	"search.collapseResults": "alwaysExpand",
+	"editor.autoClosingQuotes": "languageDefined",
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	// minimap
 	"editor.minimap.enabled": false,
@@ -194,13 +250,19 @@
 	//tabbar
 	"window.commandCenter": false,
 	"window.menuBarVisibility": "hidden",
-	"workbench.editor.showTabs": "single",
+	"window.titleBarStyle": "native",
+	"window.confirmBeforeClose": "never",
+	"window.confirmSaveUntitledWorkspace": false,
+	"terminal.integrated.confirmOnKill": "never",
+	"workbench.editor.focusRecentEditorAfterClose": false,
+	"workbench.editor.showTabs": "multiple",
 	"workbench.editor.limit.enabled": true,
 	"workbench.editor.limit.value": 3,
-	"workbench.editor.limit.perEditorGroup": false,
-	"workbench.editor.limit.excludeDirty": true,
-	"editor.tabFocusMode": true,
-	"workbench.editor.tabActionCloseVisibility": false,
+	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.excludeDirty": false,
+	//god!!!!!!!!!
+	"editor.tabFocusMode": false,
+	"workbench.editor.tabActionCloseVisibility": true,
 	"workbench.editor.tabActionUnpinVisibility": true,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//suggestions
@@ -208,90 +270,129 @@
 	"editor.suggest.matchOnWordStartOnly": false,
 	"editor.suggestSelection": "first",
 	"editor.suggest.showWords": false,
+	"editor.suggest.localityBonus": true,
 	"editor.suggest.showInlineDetails": true,
 	"editor.inlineSuggest.enabled": true,
+	"explorer.confirmUndo": "light",
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	//
 	"editor.suggest.showColors": true,
 	"editor.suggest.showCustomcolors": true,
 	"editor.suggest.showValues": true,
-	"editor.suggest.showVariables": true,
 	"editor.suggest.showFields": true,
 	"editor.suggest.showEnums": true,
 	"editor.suggest.showProperties": true,
 	"editor.suggest.showEnumMembers": true,
 	"editor.suggest.showTypeParameters": true,
+	"editor.suggest.showEvents": true,
+	"editor.suggest.showVariables": true,
+	//do not show suggestions automatically
 	"editor.suggestOnTriggerCharacters": false,
-	"editor.quickSuggestionsDelay": 1000,
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.suggest.filterGraceful": true,
+	"editor.suggest.insertMode": "replace",
+	"editor.suggest.showIcons": true,
+	"editor.suggest.showStatusBar": false,
+	// "fontFamily"
+	// "editor.suggestLineHeight": 
+	// "editor.quickSuggestionsDelay": 10,
+	"search.quickOpen.history.filterSortOrder": "recency",
+	"editor.suggest.snippetsPreventQuickSuggestions": true,
 	"editor.quickSuggestions": {
-		"other": "off",
-		"comments": "off",
-		"strings": "off",
+		"other": "on",
+		"comments": "on",
+		"strings": "on"
 	},
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//quick open
-	"search.quickOpen.includeHistory": true,
-	"search.quickOpen.includeSymbols": true,
+	"search.quickOpen.includeHistory": false,
+	"search.quickOpen.includeSymbols": false,
+	
 	"workbench.quickOpen.closeOnFocusLost": true,
-	"workbench.quickOpen.preserveInput": false,
+	"workbench.quickOpen.preserveInput": true,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//terminal
-	"terminal.integrated.fontSize": 13,
-	"terminal.integrated.lineHeight": 1.3,
-	"terminal.integrated.hideOnStartup": "always",
+	"terminal.integrated.gpuAcceleration": "canvas",
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+	"terminal.integrated.shellIntegration.history": 10,
+	"terminal.integrated.shellIntegration.suggestEnabled": true,
+	//
+	"terminal.integrated.fontSize": 9,
+	"terminal.integrated.lineHeight": 3.0,
+	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.hideOnStartup": "never",
 	"terminal.external.linuxExec": "alacritty",
-	"terminal.integrated.accessibleViewPreserveCursorPosition": true,
-	"terminal.integrated.confirmOnExit": "hasChildProcesses",
-	"terminal.integrated.drawBoldTextInBrightColors": true,
+	"terminal.integrated.confirmOnExit": "never",
+	"terminal.integrated.drawBoldTextInBrightColors": false,
+	//
 	"terminal.integrated.copyOnSelection": true,
-	"terminal.integrated.cursorBlinking": false,
+	"terminal.integrated.cursorBlinking": true,
 	"terminal.integrated.cursorStyle": "underline",
 	"terminal.integrated.cursorStyleInactive": "underline",
-	"terminal.integrated.defaultProfile.linux": "bash",
+	"terminal.integrated.accessibleViewPreserveCursorPosition": false,
+	//
 	"terminal.integrated.tabs.location": "right",
+	"terminal.integrated.tabs.showActiveTerminal": "always",
+	//
+	"terminal.integrated.enablePersistentSessions": false,
+	"terminal.integrated.showExitAlert": false,
+	//
 	"terminal.integrated.commandsToSkipShell": [
-		"workbench.action.openRecent",
+		// "workbench.action.openRecent",
+		//
 		"workbench.action.closePanel",
+		"workbench.action.togglePanel",
 		"workbench.action.closeSidebar",
-		"workbench.action.focusActiveEditorGroup",
-		"workbench.action.toggleEditorWidths",
+		"workbench.action.toggleSidebarVisibility",
+		"workbench.action.maximizeEditorHideSidebar",
+		"workbench.action.closeAuxiliaryBar",
 		"workbench.action.focusSideBar",
 		"workbench.action.terminal.focus",
+		//
 		"workbench.action.openSettings",
 		"workbench.action.openSettingsJson",
 		"workbench.action.openGlobalKeybindingsFile",
+		//
 		"workbench.action.navigateBack",
 		"workbench.action.navigateForward",
+		//
+		"workbench.action.focusActiveEditorGroup",
+		"workbench.action.toggleEditorWidths",
 		"workbench.action.evenEditorWidths",
 		"workbench.action.splitEditorRight",
+		//
 		"workbench.action.quickOpen",
-		"workbench.action.maximizeEditorHideSidebar",
-		"workbench.action.closeAuxiliaryBar",
 		"closeFindWidget",
 		"workbench.action.gotoSymbol",
-		"type",
 		"workbench.action.closeEditorsInOtherGroups",
 		"workbench.action.closeOtherEditors",
 		"workbench.action.unpinEditor",
 		"workbench.action.pinEditor",
-		"workbench.action.togglePanel",
 		"revealInExplorer",
 		"editor.action.joinLines",
 		"editor.action.formatSelection",
 		"workbench.action.files.save",
-		"editor.action.formatChanges"
+		"editor.action.formatChanges",
+		"workbench.explorer.fileView.focus",
+		"workbench.action.navigateEditorGroups",
+		"outline.collapse",
+		"outline.focus",
+		"workbench.action.showAllEditors"
 	],
-	"terminal.integrated.shellIntegration.history": 5,
-	"terminal.integrated.enablePersistentSessions": false,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//panel
-	"workbench.panel.opensMaximized": "always",
+	// "workbench.panel.opensMaximized": "always",
 	"workbench.panel.defaultLocation": "bottom",
+	"extensions.closeExtensionDetailsOnViewChange": true,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//delays
-	"editor.hover.delay": 1000,
+	"editor.hover.delay": 800,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//folding
 	////////////////////////////////////////////////////////////////////////////////////////////////////
-	"editor.foldingHighlight": true,
+	"editor.foldingHighlight": false,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//telemetry
 	"telemetry.telemetryLevel": "off",
@@ -302,5 +403,24 @@
 	"workbench.colorTheme": "GitHub Dark High Contrast",
 	"update.mode": "manual",
 	"breadcrumbs.enabled": false,
+	"workbench.activityBar.location": "hidden",
+	"editor.stickyScroll.enabled": false,
+	"workbench.editor.autoLockGroups": {
+		"default": false,
+		"workbench.editor.chatSession": false,
+		"workbench.editorinputs.searchEditorInput": false,
+		"imagePreview.previewEditor": false,
+		"vscode.audioPreview": false,
+		"vscode.videoPreview": false,
+		"workbench.editors.gettingStartedInput": false,
+		"terminalEditor": true,
+		"workbench.input.interactive": false,
+		"mainThreadWebview-markdown.preview": false,
+		"mainThreadWebview-simpleBrowser.view": false,
+		"mainThreadWebview-browserPreview": false,
+	},
+	"git.openRepositoryInParentFolders": "always",
+	"security.workspace.trust.banner": "never",
+	"security.workspace.trust.enabled": false,
 	////////////////////////////////////////////////////////////////////////////////////////////////////
 }

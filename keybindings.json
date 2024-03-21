@@ -65,41 +65,37 @@
 		"when": "editorTextFocus && foldingEnabled"
 	},
 	{
-		"key": "alt+up",
-		"command": "workbench.action.terminal.focusPrevious",
-		"when": "terminalHasBeenCreated"
-	},
-	{
-		"key": "alt+down",
-		"command": "workbench.action.terminal.focusNext",
-		"when": "terminalHasBeenCreated"
-	},
-	{
 		"key": "ctrl+m",
 		"command": "workbench.action.toggleEditorWidths",
 		"when": ""
 	},
 	{
-		"key": "ctrl+alt+]",
+		"key": "ctrl+shift+right",
 		"command": "editor.action.indentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+alt+[",
+		"key": "ctrl+shift+left",
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
 		"key": "ctrl+s",
+		"command": "workbench.action.files.saveWithoutFormatting",
+		"when": ""
+	},
+	{
+		"key": "ctrl+alt+s",
 		"command": "runCommands",
 		"args": {
 			"commands": [
 				"editor.action.formatChanges",
 				"workbench.action.files.save"
-			],
+			]
 		},
 		"when": ""
 	},
+
 	{
 		"key": "ctrl+shift+s",
 		"command": "runCommands",
@@ -107,7 +103,7 @@
 			"commands": [
 				"editor.action.formatDocument",
 				"workbench.action.files.save"
-			],
+			]
 		},
 		"when": ""
 	},
@@ -118,13 +114,8 @@
 			"commands": [
 				"editor.action.formatSelection",
 				"workbench.action.files.save"
-			],
+			]
 		},
-		"when": ""
-	},
-	{
-		"key": "ctrl+k ctrl+=",
-		"command": "workbench.action.zoomReset",
 		"when": ""
 	},
 	{
@@ -133,116 +124,60 @@
 		"when": ""
 	},
 	{
-		"key": "ctrl+shift+e",
-		"command": "revealInExplorer",
-		"when": "",
-	},
-		{
-		"key": "ctrl+e",
-		"command": "workbench.explorer.fileView.focus",
-		"when": "",
-	},
-	// 	
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 
-	// 	
-	{
 		"key": "ctrl+b",
-		"command": "workbench.action.toggleMaximizedPanel",
-		"when": "",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": ""
 	},
+	//
 	{
-		"key": "tab",
-		"command": "workbench.action.navigateEditorGroups",
-		"when": "!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
-	},
-	// sideBarVisible && !panelVisible && !auxiliaryBarVisible
-	// !sideBarVisible && panelVisible && !auxiliaryBarVisible
-	// !sideBarVisible && !panelVisible && auxiliaryBarVisible
-	// sideBarVisible && panelVisible && !auxiliaryBarVisible
-	// sideBarVisible && !panelVisible && auxiliaryBarVisible
-	// !sideBarVisible && panelVisible && auxiliaryBarVisible
-	// sideBarVisible && panelVisible && auxiliaryBarVisible
-	//actions to close panels and any open sidebars, then focus into editor
-	// case 1: one board open
-	//only sidebar open
-	{
-		"key": "tab",
-		"command": "workbench.action.closeSidebar",
-		"when": "sideBarVisible && !panelVisible && !auxiliaryBarVisible"
-	},
-	// only panel open
-	{
-		"key": "tab",
-		"command": "workbench.action.closePanel",
-		"when": "!sideBarVisible && panelVisible && !auxiliaryBarVisible"
-	},
-	//only secondary bar open
-	{
-		"key": "tab",
-		"command": "workbench.action.closeAuxiliaryBar",
-		"when": "!sideBarVisible && !panelVisible && auxiliaryBarVisible"
-	},
-	// case 2: two boards open
-	{
-		"key": "tab",
-		"command": "workbench.action.maximizeEditorHideSidebar",
-		"when": " sideBarVisible && !panelVisible && auxiliaryBarVisible"
-	},
-	{
-		"key": "tab",
+		"key": "ctrl+e",
 		"command": "runCommands",
 		"args": {
 			"commands": [
-				"workbench.action.closePanel",
-				"workbench.action.closeSidebar",
+				"closeFindWidget",
+				"outline.focus",
+				"outline.removeView",
+				"workbench.files.action.collapseExplorerFolders",
+				"workbench.files.action.focusOpenEditorsView",
+				"workbench.explorer.openEditorsView.removeView",
+				"revealInExplorer",
 			]
 		},
-		"when": "sideBarVisible && panelVisible && !auxiliaryBarVisible"
+		"when": ""
 	},
 	{
-		"key": "tab",
+		"key": "ctrl+shift+e",
+		"command": "copyFilePath",
+		"when": ""
+	},
+	//
+	{
+		"key": "ctrl+shift+enter",
 		"command": "runCommands",
 		"args": {
 			"commands": [
+				"closeFindWidget",
+				"workbench.action.closeSidebar",
+				"workbench.action.closePanel",
 				"workbench.action.closeAuxiliaryBar",
-				"workbench.action.closePanel"
+				"workbench.action.closeQuickOpen"
 			]
 		},
-		"when": "!sideBarVisible && panelVisible && auxiliaryBarVisible"
-	},
-	// case 1: three boards  open
-	{
-		"key": "tab",
-		"command": "runCommands",
-		"args": {
-			"commands": [
-				"workbench.action.closePanel",
-				"workbench.action.closeSidebar",
-				"workbench.action.closeAuxiliaryBar"
-			]
-		},
-		"when": "sideBarVisible && panelVisible && auxiliaryBarVisible"
+		"when": "findWidgetVisible || sideBarVisible || panelVisible || auxiliaryBarVisible"
 	},
 	{
-		"key": "ctrl+tab",
-		"command": "workbench.files.action.focusOpenEditorsView",
+		"key": "ctrl+shift+enter",
+		"command": "workbench.action.navigateEditorGroups",
+		"when": "!findWidgetVisible &&!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
+	},
+	{
+		"key": "shift+enter",
+		"command": "workbench.action.showAllEditorsByMostRecentlyUsed",
+		"when": ""
+	},
+	{
+		"key": "alt+enter",
+		"command": "workbench.action.showEditorsInActiveGroup",
 		"when": ""
 	},
 	{
@@ -265,52 +200,76 @@
 		"command": "workbench.action.navigateForward",
 		"when": ""
 	},
-	{
-		"key": "escape",
-		"command": "workbench.action.pinEditor",
-		"when": "",
-	},
-	{
-		"key": "shift+escape",
-		"command": "workbench.action.unpinEditor",
-		"when": "",
-	},
 	//close all windows in all groups
 	{
 		"key": "ctrl+shift+w",
-		"command": "workbench.action.closeOtherEditors",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				"workbench.action.closeAllGroups",
+				"workbench.explorer.fileView.focus",
+			]
+		},
 		"when": ""
 	},
 	{
-		"key": "alt+w",
-		"command": "workbench.action.closeEditorsInOtherGroups",
+		"key": "ctrl+r",
+		"command": "editor.action.rename",
+		// "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
 		"when": ""
-	},
+	 },
+	 {
+		"key": "ctrl+shift+r",
+		"command": "editor.action.goToReferences",
+		"when": ""
+		// "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+	 },
+	 {
+		"key": "ctrl+l",
+		"command": "workbench.action.openRecent",
+		"when": ""
+	 },
+
 	//open new editor group
 	{
 		"key": "ctrl+\\",
 		"command": "workbench.action.splitEditorRight",
 		"when": ""
 	},
-	{
-		"key": "shift+tab",
-		"command": "type",
-		"args": {
-			"text": "\t"
-		},
-		"when": ""
-	},
-	{
-		"key": "shift+space",
-		"command": "type",
-		"args": {
-			"text": "\t"
-		},
-		"when": ""
-	},
-	{
+		{
 		"key": "ctrl+shift+\\",
-		"command": "workbench.action.terminal.split",
+		"command": "workbench.action.splitEditorDown",
+		"when": ""
+	},
+		{
+		"key": "ctrl+shift+l",
+		"command": "workbench.action.toggleEditorGroupLock",
+		"when": ""
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "workbench.action.terminal.focusNext",
+		"when": ""
+	},
+	{
+		"key": "ctrl+shift+o",
+		"command": "runCommands",
+		// workbench.action.gotoSymbol
+		"args": {
+			"commands": [
+				"workbench.files.action.focusOpenEditorsView",
+				"workbench.explorer.openEditorsView.removeView",
+				"workbench.files.action.focusFilesExplorer",
+				// "workbench.explorer.fileView.toggleVisibility",
+				// "",
+				// ""
+				// "outline.expand",
+				"outline.focus",
+				"outline.expand",
+				"outline.filterOnType",
+				"outline.sortByName",
+			]
+		},
 		"when": ""
 	},
 	{
@@ -318,25 +277,21 @@
 		"command": "workbench.action.gotoSymbol",
 		"when": ""
 	},
-	//
-	//
-	//
-	// find
-	{
-		"key": "ctrl+f",
-		"command": "closeFindWidget",
-		"when": "editorFocus && findWidgetVisible && !isComposing"
-	},
 	// external terminal
 	{
-		"key": "ctrl+shift+t",
+		"key": "ctrl+shift+alt+t",
 		"command": "workbench.action.terminal.openNativeConsole",
 		"when": ""
 	},
-
 	{
 		"key": "ctrl+t",
 		"command": "terminal.focus",
+		"when": ""
+	},
+	{
+		"key": "ctrl+shift+t",
+		"command": "workbench.action.terminal.openNativeConsole",
+		// "command": "workbench.action.terminal.focusNext",
 		"when": ""
 	},
 	//
@@ -347,13 +302,68 @@
 	**  DISABLED BINDINGS
 	**
 	******/
-	// {
-	// 	"key": "ctrl+`",
-	// 	"command": "",
-	// 	"when": ""
-	// },
+	{
+		"key": "ctrl+`",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+shift+b",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+shift+c",
+		"command": "workbench.action.terminal.copySelection",
+		"when": ""
+	},
+	{
+		"key": "ctrl+alt+right",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+alt+left",
+		"command": "",
+		"when": ""
+	},
 	{
 		"key": "ctrl+q",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+3",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+4",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+5",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+6",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+7",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+8",
+		"command": "",
+		"when": ""
+	},
+	{
+		"key": "ctrl+9",
 		"command": "",
 		"when": ""
 	},
@@ -361,15 +371,22 @@
 		"key": "ctrl+0",
 		"command": "",
 		"when": ""
+	},
+	{
+		"key": "ctrl+shift+d",
+		"command": "",
+		"when": ""
 	}
-	// {
-	// 	"key": "ctrl+=",
-	// 	"command": "",
-	// 	"when": ""
-	// },
-	// {
-	// 	"key": "ctrl+-",
-	// 	"command": "",
-	// 	"when": ""
-	// },
 ]
+/**
+ useful vscode state conditions
+================================
+
+filesExplorerFocus && foldersViewVisible
+
+
+
+
+
+
+***/
