@@ -176,9 +176,14 @@
 		"when": ""
 	},
 	{
-		"key": "alt+enter",
-		"command": "workbench.action.showEditorsInActiveGroup",
+		"key": "ctrl+shift+alt+enter",
+		"command": "workbench.action.quickOpen",
 		"when": ""
+	},
+	{
+		"key": "ctrl+shift+enter",
+		"command": "workbench.action.navigateEditorGroups",
+		"when": "!findWidgetVisible &&!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
 	},
 	{
 		"key": "ctrl+shift+,",
@@ -206,14 +211,14 @@
 		"command": "runCommands",
 		"args": {
 			"commands": [
-				"workbench.action.closeAllGroups",
+				"workbench.action.closeOtherEditors",
 				"workbench.explorer.fileView.focus",
 			]
 		},
 		"when": ""
 	},
 	{
-		"key": "ctrl+r",
+		"key": "alt+r",
 		"command": "editor.action.rename",
 		// "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
 		"when": ""
@@ -223,11 +228,6 @@
 		"command": "editor.action.goToReferences",
 		"when": ""
 		// "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-	 },
-	 {
-		"key": "ctrl+l",
-		"command": "workbench.action.openRecent",
-		"when": ""
 	 },
 
 	//open new editor group
@@ -290,8 +290,8 @@
 	},
 	{
 		"key": "ctrl+shift+t",
-		"command": "workbench.action.terminal.openNativeConsole",
-		// "command": "workbench.action.terminal.focusNext",
+		// "command": "workbench.action.terminal.openNativeConsole",
+		"command": "workbench.action.terminal.new",
 		"when": ""
 	},
 	//
@@ -376,7 +376,17 @@
 		"key": "ctrl+shift+d",
 		"command": "",
 		"when": ""
-	}
+	},
+	{
+		"key": "ctrl+=",
+		"command": "",
+		"when": ""
+	    },
+	    {
+		"key": "ctrl+-",
+		"command": "",
+		"when": ""
+	    }
 ]
 /**
  useful vscode state conditions
