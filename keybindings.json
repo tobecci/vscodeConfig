@@ -212,7 +212,7 @@
 		"args": {
 			"commands": [
 				"workbench.action.closeOtherEditors",
-				"workbench.explorer.fileView.focus",
+				// "workbench.explorer.fileView.focus",
 			]
 		},
 		"when": ""

@@ -1,12 +1,12 @@
 {
 	"window.title": "${dirty} ${rootName}",
 	"window.titleBarStyle": "native",
-	"workbench.editor.showTabs": "multiple",
+	"workbench.editor.showTabs": "single",
 	"window.commandCenter": false,
 	"window.menuBarVisibility": "hidden",
 	"workbench.editor.limit.enabled": true,
-	"workbench.editor.limit.value": 3,
-	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.value": 10,
+	"workbench.editor.limit.perEditorGroup": false,
 	"workbench.editor.limit.excludeDirty": false,
 	//general options
 	"window.zoomPerWindow": false,
@@ -14,7 +14,7 @@
 	"editor.mouseWheelZoom": false,
 	"terminal.integrated.fontFamily": "SF Mono",
 	"terminal.integrated.mouseWheelZoom": false,
-	"window.zoomLevel": -1,
+	"window.zoomLevel": 2,
 	"editor.fontSize": 13,
 	"terminal.integrated.fontSize": 13,
 	"editor.lineHeight": 2.8,
@@ -88,13 +88,13 @@
 	},
 	"[makefile]": {},
 	"files.exclude": {
-		"**/.git": true,
+		"**/.git": false,
 		"**/.svn": true,
 		"**/.hg": true,
 		"**/CVS": true,
 		"**/.DS_Store": true,
 		"**/Thumbs.db": true,
-		// "**/node_modules": true,
+		"**/node_modules": false,
 		"**/.idea": true
 	},
 	"[dart]": {
@@ -160,7 +160,6 @@
 	"workbench.editor.restoreViewState": true,
 	"workbench.editor.sharedViewState": true,
 	"window.closeWhenEmpty": true,
-	"workbench.iconTheme": "material-icon-theme",
 	// "editor.tabCompletion": "off",
 	//indent indicators
 	"editor.insertSpaces": false,
@@ -306,7 +305,7 @@
 	"workbench.quickOpen.closeOnFocusLost": true,
 	"workbench.quickOpen.preserveInput": true,
 	//terminal
-	"terminal.integrated.gpuAcceleration": "canvas",
+	"terminal.integrated.gpuAcceleration": "off",
 	"terminal.integrated.shellIntegration.enabled": false,
 	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
 	"terminal.integrated.shellIntegration.history": 2,
@@ -314,7 +313,7 @@
 	//
 	"terminal.integrated.defaultProfile.linux": "bash",
 	"terminal.integrated.hideOnStartup": "never",
-	"terminal.external.linuxExec": "xfce4-terminal",
+	"terminal.external.linuxExec": "gnome-terminal",
 	"terminal.integrated.confirmOnExit": "never",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	//
@@ -383,7 +382,6 @@
 	"redhat.telemetry.enabled": false,
 	"docker-compose.enableTelemetry": false,
 	"update.mode": "manual",
-	"workbench.activityBar.location": "hidden",
 	"editor.stickyScroll.enabled": false,
 	"workbench.editor.autoLockGroups": {
 		"default": false,
@@ -402,7 +400,8 @@
 	"git.openRepositoryInParentFolders": "always",
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.enabled": false,
-	"workbench.colorTheme": "One Dark Pro Darker",
+	"workbench.colorTheme": "Default High Contrast",
 	"workbench.startupEditor": "none",
 	"liveServer.settings.NoBrowser": true,
+	"workbench.activityBar.location": "hidden",
 }
