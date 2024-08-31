@@ -79,18 +79,16 @@
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-
 	{
-		"key": "ctrl+k ctrl+]",
+		"key": "ctrl+=",
 		"command": "editor.action.indentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
 	{
-		"key": "ctrl+k ctrl+[",
+		"key": "ctrl+-",
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
-
 	{
 		"key": "ctrl+s",
 		"command": "workbench.action.files.saveWithoutFormatting",
@@ -107,7 +105,6 @@
 		},
 		"when": ""
 	},
-
 	{
 		"key": "ctrl+shift+s",
 		"command": "runCommands",
@@ -140,39 +137,23 @@
 		"command": "workbench.action.toggleSidebarVisibility",
 		"when": ""
 	},
-	//
-	{
-		"key": "ctrl+e",
-		"command": "runCommands",
-		"args": {
-			"commands": [
-				"closeFindWidget",
-				"outline.focus",
-				"outline.removeView",
-				"workbench.files.action.collapseExplorerFolders",
-				"workbench.files.action.focusOpenEditorsView",
-				"workbench.explorer.openEditorsView.removeView",
-				"revealInExplorer",
-			]
-		},
-		"when": ""
-	},
 	{
 		"key": "ctrl+shift+e",
 		"command": "copyFilePath",
 		"when": ""
 	},
 	//
+	//
 	{
 		"key": "ctrl+shift+enter",
 		"command": "runCommands",
 		"args": {
 			"commands": [
-				"closeFindWidget",
-				"workbench.action.closeSidebar",
 				"workbench.action.closePanel",
+				"closeFindWidget",
 				"workbench.action.closeAuxiliaryBar",
-				"workbench.action.closeQuickOpen"
+				"workbench.action.closeQuickOpen",
+				"workbench.action.closeSidebar",
 			]
 		},
 		"when": "findWidgetVisible || sideBarVisible || panelVisible || auxiliaryBarVisible"
@@ -191,11 +172,6 @@
 		"key": "ctrl+shift+alt+enter",
 		"command": "workbench.action.quickOpen",
 		"when": ""
-	},
-	{
-		"key": "ctrl+shift+enter",
-		"command": "workbench.action.navigateEditorGroups",
-		"when": "!findWidgetVisible &&!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
 	},
 	{
 		"key": "ctrl+shift+,",
@@ -223,8 +199,8 @@
 		"command": "runCommands",
 		"args": {
 			"commands": [
-				"workbench.action.closeOtherEditors",
-				// "workbench.explorer.fileView.focus",
+				"workbench.action.closeEditorsInGroup",
+				"workbench.explorer.fileView.focus",
 			]
 		},
 		"when": ""
@@ -234,26 +210,25 @@
 		"command": "editor.action.rename",
 		// "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
 		"when": ""
-	 },
-	 {
+	},
+	{
 		"key": "ctrl+shift+r",
 		"command": "editor.action.goToReferences",
 		"when": ""
 		// "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
-	 },
-
+	},
 	//open new editor group
 	{
 		"key": "ctrl+\\",
 		"command": "workbench.action.splitEditorRight",
 		"when": ""
 	},
-		{
+	{
 		"key": "ctrl+shift+\\",
 		"command": "workbench.action.splitEditorDown",
 		"when": ""
 	},
-		{
+	{
 		"key": "ctrl+shift+l",
 		"command": "workbench.action.toggleEditorGroupLock",
 		"when": ""
@@ -272,10 +247,6 @@
 				"workbench.files.action.focusOpenEditorsView",
 				"workbench.explorer.openEditorsView.removeView",
 				"workbench.files.action.focusFilesExplorer",
-				// "workbench.explorer.fileView.toggleVisibility",
-				// "",
-				// ""
-				// "outline.expand",
 				"outline.focus",
 				"outline.expand",
 				"outline.filterOnType",
@@ -295,16 +266,43 @@
 		"command": "workbench.action.terminal.openNativeConsole",
 		"when": ""
 	},
+	//terminal
 	{
 		"key": "ctrl+t",
 		"command": "terminal.focus",
-		"when": ""
+		"when": "!panelVisible"
+	},
+	{
+		"key": "ctrl+t",
+		"command": "workbench.action.closePanel",
+		"when": "panelVisible"
 	},
 	{
 		"key": "ctrl+shift+t",
-		// "command": "workbench.action.terminal.openNativeConsole",
 		"command": "workbench.action.terminal.new",
 		"when": ""
+	},
+	//explorer
+	{
+		"key": "ctrl+e",
+		"command": "runCommands",
+		"args": {
+			"commands": [
+				"closeFindWidget",
+				"outline.focus",
+				"outline.removeView",
+				"workbench.files.action.collapseExplorerFolders",
+				"workbench.files.action.focusOpenEditorsView",
+				"workbench.explorer.openEditorsView.removeView",
+				"revealInExplorer",
+			]
+		},
+		"when": "!sideBarVisible"
+	},
+	{
+		"key": "ctrl+e",
+		"command": "workbench.action.closeSidebar",
+		"when": "sideBarVisible"
 	},
 	//
 	//
@@ -389,16 +387,6 @@
 		"command": "",
 		"when": ""
 	},
-	{
-		"key": "ctrl+=",
-		"command": "",
-		"when": ""
-	    },
-	    {
-		"key": "ctrl+-",
-		"command": "",
-		"when": ""
-	    }
 ]
 /**
  useful vscode state conditions
