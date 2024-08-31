@@ -304,6 +304,17 @@
 		"command": "workbench.action.closeSidebar",
 		"when": "sideBarVisible"
 	},
+	//pin and unpin editors
+	{
+		"key": "alt+p",
+		"command": "workbench.action.pinEditor",
+		"when": "!activeEditorIsPinned"
+	},
+	{
+		"key": "alt+p",
+		"command": "workbench.action.unpinEditor",
+		"when": "activeEditorIsPinned"
+	},
 	//
 	//
 	//
