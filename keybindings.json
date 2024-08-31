@@ -79,6 +79,18 @@
 		"command": "editor.action.outdentLines",
 		"when": "editorTextFocus && !editorReadonly"
 	},
+
+	{
+		"key": "ctrl+k ctrl+]",
+		"command": "editor.action.indentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "ctrl+k ctrl+[",
+		"command": "editor.action.outdentLines",
+		"when": "editorTextFocus && !editorReadonly"
+	},
+
 	{
 		"key": "ctrl+s",
 		"command": "workbench.action.files.saveWithoutFormatting",
