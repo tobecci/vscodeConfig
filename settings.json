@@ -148,7 +148,7 @@
 	"explorer.autoReveal": true,
 	"explorer.decorations.colors": true,
 	"workbench.tree.renderIndentGuides": "always",
-	"workbench.tree.indent": 30,
+	"workbench.tree.indent": 40,
 	"editor.parameterHints.enabled": true,
 	"files.restoreUndoStack": true,
 	"explorer.enableDragAndDrop": false,
