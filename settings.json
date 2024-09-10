@@ -1,6 +1,9 @@
 {
-	//window zoom
-	"window.zoomLevel": -1,
+	//work zoom
+	"window.zoomLevel": 2,
+
+	//present zoom
+	// "window.zoomLevel": 1,
 
 
 	"window.title": "${dirty} ${rootName}",
@@ -15,14 +18,14 @@
 	"workbench.editor.limit.excludeDirty": false,
 	//general options
 	"window.zoomPerWindow": false,
-	"editor.fontFamily": "Fira Code",
+	"editor.fontFamily": "fira code",
 	"editor.mouseWheelZoom": false,
-	"terminal.integrated.fontFamily": "Fira Code",
+	"terminal.integrated.fontFamily":  "fira code",
 	"terminal.integrated.mouseWheelZoom": false,
-	"editor.fontSize":9,
-	"terminal.integrated.fontSize": 9,
-	"editor.lineHeight": 2.5,
-	"terminal.integrated.lineHeight": 1.5,
+	"editor.fontSize":12,
+	"terminal.integrated.fontSize": 12,
+	"editor.lineHeight": 3.2,
+	"terminal.integrated.lineHeight": 2.5,
 	"editor.tabSize": 6,
 	"editor.renderWhitespace": "all",
 	"editor.renderFinalNewline": "on",
@@ -145,7 +148,7 @@
 	"explorer.autoReveal": true,
 	"explorer.decorations.colors": true,
 	"workbench.tree.renderIndentGuides": "always",
-	"workbench.tree.indent": 10,
+	"workbench.tree.indent": 30,
 	"editor.parameterHints.enabled": true,
 	"files.restoreUndoStack": true,
 	"explorer.enableDragAndDrop": false,
@@ -173,7 +176,7 @@
 	"editor.lineNumbers": "on",
 	//misc
 	"editor.renderControlCharacters": true,
-	"editor.autoClosingDelete": "always",
+	"editor.autoClosingDelete": "never",
 	"editor.autoClosingBrackets": "beforeWhitespace",
 	"editor.autoClosingComments": "beforeWhitespace",
 	// "editor.autoClosingOvertype": "never",
@@ -255,7 +258,7 @@
 	"editor.minimap.renderCharacters": false,
 	"editor.minimap.scale": 3,
 	"editor.minimap.size": "fit",
-	"editor.minimap.maxColumn": 100,
+	"editor.minimap.maxColumn": 50,
 	"editor.minimap.showSlider": "always",
 	"editor.minimap.autohide": false,
 	//tabbar
@@ -315,9 +318,9 @@
 	"terminal.integrated.shellIntegration.history": 2,
 	"terminal.integrated.shellIntegration.suggestEnabled": false,
 	//
-	"terminal.integrated.defaultProfile.linux": "bash",
-	"terminal.integrated.hideOnStartup": "never",
-	"terminal.external.linuxExec": "gnome-terminal",
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.hideOnStartup": "always",
+	"terminal.external.linuxExec": "xfce4-terminal",
 	"terminal.integrated.confirmOnExit": "never",
 	"terminal.integrated.drawBoldTextInBrightColors": false,
 	//
@@ -373,7 +376,7 @@
 		"workbench.action.showAllEditors"
 	],
 	//panel
-	"workbench.panel.opensMaximized": "always",
+	"workbench.panel.opensMaximized": "never",
 	"workbench.panel.defaultLocation": "right",
 	"extensions.closeExtensionDetailsOnViewChange": true,
 	//delays

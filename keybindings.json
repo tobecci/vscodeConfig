@@ -156,13 +156,14 @@
 				"workbench.action.closeSidebar",
 			]
 		},
-		"when": "findWidgetVisible || sideBarVisible || panelVisible || auxiliaryBarVisible"
+		// "when": "findWidgetVisible || sideBarVisible || panelVisible || auxiliaryBarVisible"
+		"when": ""
 	},
-	{
-		"key": "ctrl+shift+enter",
-		"command": "workbench.action.navigateEditorGroups",
-		"when": "!findWidgetVisible &&!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
-	},
+	// {
+	// 	"key": "ctrl+shift+enter",
+	// 	"command": "workbench.action.navigateEditorGroups",
+	// 	"when": "!findWidgetVisible &&!sideBarVisible && !panelVisible && !auxiliaryBarVisible"
+	// },
 	{
 		"key": "shift+enter",
 		"command": "workbench.action.showAllEditorsByMostRecentlyUsed",
@@ -270,12 +271,7 @@
 	{
 		"key": "ctrl+t",
 		"command": "terminal.focus",
-		"when": "!panelVisible"
-	},
-	{
-		"key": "ctrl+t",
-		"command": "workbench.action.closePanel",
-		"when": "panelVisible"
+		"when": ""
 	},
 	{
 		"key": "ctrl+shift+t",
@@ -296,14 +292,9 @@
 				"workbench.explorer.openEditorsView.removeView",
 				"revealInExplorer",
 			]
-		},
-		"when": "!sideBarVisible"
+		}
 	},
-	{
-		"key": "ctrl+e",
-		"command": "workbench.action.closeSidebar",
-		"when": "sideBarVisible"
-	},
+
 	//pin and unpin editors
 	{
 		"key": "alt+p",
