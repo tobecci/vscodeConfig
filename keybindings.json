@@ -306,6 +306,17 @@
 		"command": "workbench.action.unpinEditor",
 		"when": "activeEditorIsPinned"
 	},
+	//debug
+	{
+	  "key": "ctrl+d",
+	  "command": "workbench.action.debug.start",
+	  "when": "debuggersAvailable && debugState == 'inactive'"
+	},
+	{
+		"key": "ctrl+d",
+		"command": "workbench.action.debug.continue",
+		"when": "debugState == 'stopped'"
+	    },
 	//
 	//
 	//

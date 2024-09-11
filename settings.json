@@ -1,6 +1,6 @@
 {
 	//work zoom
-	"window.zoomLevel": 2,
+	"window.zoomLevel": -1,
 
 	//present zoom
 	// "window.zoomLevel": 1,
@@ -18,14 +18,16 @@
 	"workbench.editor.limit.excludeDirty": false,
 	//general options
 	"window.zoomPerWindow": false,
-	"editor.fontFamily": "fira code",
+	"editor.fontFamily": "fira code medium",
 	"editor.mouseWheelZoom": false,
-	"terminal.integrated.fontFamily":  "fira code",
+	"terminal.integrated.fontFamily":  "fira code medium",
+	"debug.console.fontFamily": "fira code medium",
+	"debug.console.fontSize": 8,
 	"terminal.integrated.mouseWheelZoom": false,
-	"editor.fontSize":12,
-	"terminal.integrated.fontSize": 12,
+	"editor.fontSize":11,
+	"terminal.integrated.fontSize": 8,
 	"editor.lineHeight": 3.2,
-	"terminal.integrated.lineHeight": 2.5,
+	"terminal.integrated.lineHeight": 2.2,
 	"editor.tabSize": 6,
 	"editor.renderWhitespace": "all",
 	"editor.renderFinalNewline": "on",
@@ -40,14 +42,14 @@
 	"editor.wordWrap": "off",
 	"editor.formatOnSave": false,
 	//brackets and occurences
-	"editor.guides.bracketPairsHorizontal": false,
+	"editor.guides.bracketPairsHorizontal": true,
 	"editor.bracketPairColorization.independentColorPoolPerBracketType": false,
 	"editor.guides.bracketPairs": "active",
 	"editor.guides.indentation": true,
 	"editor.matchBrackets": "near",
 	"editor.renderLineHighlight": "all",
 	"editor.guides.highlightActiveBracketPair": true,
-	"editor.guides.highlightActiveIndentation": false,
+	"editor.guides.highlightActiveIndentation": true,
 	"editor.occurrencesHighlight": "singleFile",
 	"editor.rename.enablePreview": true,
 	"editor.defaultColorDecorators": true,
@@ -407,7 +409,7 @@
 	"git.openRepositoryInParentFolders": "always",
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.enabled": false,
-	"workbench.colorTheme": "Night Owl (No Italics)",
+	"workbench.colorTheme": "Nicer High Contrast",
 	"workbench.startupEditor": "none",
 	"liveServer.settings.NoBrowser": true,
 	"workbench.editorAssociations": {
