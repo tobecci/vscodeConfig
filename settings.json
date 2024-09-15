@@ -1,6 +1,6 @@
 {
 	//work zoom
-	"window.zoomLevel": -1,
+	"window.zoomLevel": 1,
 
 	//present zoom
 	// "window.zoomLevel": 1,
@@ -8,24 +8,24 @@
 
 	"window.title": "${dirty} ${rootName}",
 	"window.titleBarStyle": "native",
-	"workbench.editor.showTabs": "multiple",
+	"workbench.editor.showTabs": "single",
 	"window.commandCenter": false,
 	"window.menuBarVisibility": "hidden",
 	"workbench.activityBar.location": "default",
 	"workbench.editor.limit.enabled": true,
-	"workbench.editor.limit.value": 5,
-	"workbench.editor.limit.perEditorGroup": true,
+	"workbench.editor.limit.value": 10,
+	"workbench.editor.limit.perEditorGroup": false,
 	"workbench.editor.limit.excludeDirty": false,
 	//general options
 	"window.zoomPerWindow": false,
-	"editor.fontFamily": "fira code medium",
 	"editor.mouseWheelZoom": false,
+	"terminal.integrated.mouseWheelZoom": false,
+	"editor.fontFamily": "fira code medium",
 	"terminal.integrated.fontFamily":  "fira code medium",
 	"debug.console.fontFamily": "fira code medium",
-	"debug.console.fontSize": 8,
-	"terminal.integrated.mouseWheelZoom": false,
-	"editor.fontSize":11,
-	"terminal.integrated.fontSize": 8,
+	"editor.fontSize":12,
+	"terminal.integrated.fontSize": 12,
+	"debug.console.fontSize": 12,
 	"editor.lineHeight": 3.2,
 	"terminal.integrated.lineHeight": 2.2,
 	"editor.tabSize": 6,
@@ -33,13 +33,12 @@
 	"editor.renderFinalNewline": "on",
 	"workbench.editor.pinnedTabsOnSeparateRow": true,
 	"window.density.editorTabHeight": "default",
-	"editor.wrappingStrategy": "simple",
+	
 	"window.openFilesInNewWindow": "default",
 	"window.openFoldersInNewWindow": "default",
 	"editor.selectionHighlight": true,
 	"workbench.reduceMotion": "on",
 	"files.enableTrash": false,
-	"editor.wordWrap": "off",
 	"editor.formatOnSave": false,
 	//brackets and occurences
 	"editor.guides.bracketPairsHorizontal": true,
@@ -173,7 +172,10 @@
 	//indent indicators
 	"editor.insertSpaces": false,
 	//gutter
-	"editor.wrappingIndent": "none",
+	"editor.wordWrap": "on",
+	"editor.wrappingStrategy": "advanced",
+	"editor.wrappingIndent": "same",
+
 	"workbench.editor.pinnedTabSizing": "normal",
 	"editor.lineNumbers": "on",
 	//misc
@@ -256,7 +258,7 @@
 	"search.collapseResults": "alwaysExpand",
 	"editor.autoClosingQuotes": "languageDefined",
 	// minimap
-	"editor.minimap.enabled": true,
+	"editor.minimap.enabled": false,
 	"editor.minimap.renderCharacters": false,
 	"editor.minimap.scale": 3,
 	"editor.minimap.size": "fit",
@@ -409,7 +411,7 @@
 	"git.openRepositoryInParentFolders": "always",
 	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.enabled": false,
-	"workbench.colorTheme": "Nicer High Contrast",
+	"workbench.colorTheme": "Cobalt2",
 	"workbench.startupEditor": "none",
 	"liveServer.settings.NoBrowser": true,
 	"workbench.editorAssociations": {
