@@ -418,5 +418,5 @@
 	"workbench.editorAssociations": {
 		"*.perfetto-trace": "default"
 	},
-	"window.customTitleBarVisibility": "auto",
+	"window.customTitleBarVisibility": "never",
 }
