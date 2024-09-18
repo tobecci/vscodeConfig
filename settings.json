@@ -1,6 +1,6 @@
 {
 	//work zoom
-	"window.zoomLevel": -1,
+	"window.zoomLevel": -2,
 
 	//present zoom
 	// "window.zoomLevel": 2,
@@ -21,13 +21,13 @@
 	"window.zoomPerWindow": false,
 	"editor.mouseWheelZoom": false,
 	"terminal.integrated.mouseWheelZoom": false,
-	"editor.fontFamily": "fira code medium",
-	"terminal.integrated.fontFamily":  "fira code medium",
-	"debug.console.fontFamily": "fira code medium",
-	"editor.fontSize":12,
-	"terminal.integrated.fontSize": 10,
-	"debug.console.fontSize": 10,
-	"editor.lineHeight": 3.2,
+	"editor.fontFamily": "sf mono",
+	"terminal.integrated.fontFamily":  "sf mono",
+	"debug.console.fontFamily": "sf mono",
+	"editor.fontSize":10,
+	"terminal.integrated.fontSize": 8,
+	"debug.console.fontSize": 8,
+	"editor.lineHeight": 3.0,
 	"terminal.integrated.lineHeight": 2.2,
 	"editor.tabSize": 6,
 	"editor.renderWhitespace": "all",
@@ -173,7 +173,7 @@
 	//indent indicators
 	"editor.insertSpaces": false,
 	//gutter
-	"editor.wordWrap": "on",
+	"editor.wordWrap": "off",
 	"editor.wrappingStrategy": "advanced",
 	"editor.wrappingIndent": "same",
 
